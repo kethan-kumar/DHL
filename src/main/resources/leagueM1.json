@@ -1,0 +1,184 @@
+{
+  "leagueName": "Ottawa Hockey League",
+  "conferences": [
+    {
+      "conferenceName": "Eastern Conference",
+      "divisions": [
+        {
+          "divisionName": "Atlantic",
+          "teams": [
+            {
+              "teamName": "Boston",
+              "generalManager": "Mister Fred",
+              "headCoach": "Mary Smith",
+              "players": [
+                {
+                  "playerName": "Player One",
+                  "position": "forward",
+                  "captain": true
+                },
+                {
+                  "playerName": "Player Two",
+                  "position": "defense",
+                  "captain": false
+                },
+                {
+                  "playerName": "Player Three",
+                  "position": "goalie",
+                  "captain": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "divisionName": "Pacific",
+          "teams": [
+            {
+              "teamName": "Halifax",
+              "generalManager": "Mister Fred",
+              "headCoach": "Mary Smith",
+              "players": [
+                {
+                  "playerName": "Player One",
+                  "position": "forward",
+                  "captain": true
+                },
+                {
+                  "playerName": "Player Two",
+                  "position": "defense",
+                  "captain": false
+                },
+                {
+                  "playerName": "Player Three",
+                  "position": "goalie",
+                  "captain": false
+                }
+              ]
+            },
+            {
+              "teamName": "5308",
+              "generalManager": "Mister Fred",
+              "headCoach": "Mary Smith",
+              "players": [
+                {
+                  "playerName": "Kethan",
+                  "position": "forward",
+                  "captain": true
+                },
+                {
+                  "playerName": "Sid",
+                  "position": "defense",
+                  "captain": false
+                },
+                {
+                  "playerName": "Yash",
+                  "position": "goalie",
+                  "captain": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "conferenceName": "Western Conference",
+      "divisions": [
+        {
+          "divisionName": "Atlantic",
+          "teams": [
+            {
+              "teamName": "Ottawa",
+              "generalManager": "Mister Fred",
+              "headCoach": "Mary Smith",
+              "players": [
+                {
+                  "playerName": "Player One",
+                  "position": "forward",
+                  "captain": true
+                },
+                {
+                  "playerName": "Player Two",
+                  "position": "defense",
+                  "captain": false
+                },
+                {
+                  "playerName": "Player Three",
+                  "position": "goalie",
+                  "captain": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "divisionName": "Pacific",
+          "teams": [
+            {
+              "teamName": "Nova Scotia",
+              "generalManager": "Mister Fred",
+              "headCoach": "Mary Smith",
+              "players": [
+                {
+                  "playerName": "Player One",
+                  "position": "forward",
+                  "captain": true
+                },
+                {
+                  "playerName": "Player Two",
+                  "position": "defense",
+                  "captain": false
+                },
+                {
+                  "playerName": "Player Three",
+                  "position": "goalie",
+                  "captain": false
+                }
+              ]
+            },
+            {
+              "teamName": "5408",
+              "generalManager": "Mister Fred",
+              "headCoach": "Mary Smith",
+              "players": [
+                {
+                  "playerName": "Kethan",
+                  "position": "forward",
+                  "captain": true
+                },
+                {
+                  "playerName": "Sid",
+                  "position": "defense",
+                  "captain": false
+                },
+                {
+                  "playerName": "Yash",
+                  "position": "goalie",
+                  "captain": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "freeAgents": [
+    {
+      "playerName": "Success",
+      "position": "forward",
+      "captain": false
+    },
+    {
+      "playerName": "Agent Two",
+      "position": "defense",
+      "captain": false
+    },
+    {
+      "playerName": "Agent Three",
+      "position": "goalie",
+      "captain": false
+    }
+  ]
+}

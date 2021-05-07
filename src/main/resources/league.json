@@ -1,0 +1,294 @@
+{
+  "leagueName": "Dalhousie Hockey League",
+  "conference": [
+    {
+      "conferenceName": "Eastern Conference",
+      "divisions": [
+        {
+          "divisionName": "Atlantic",
+          "teams": [
+            {
+              "teamName": "Team 12",
+              "generalManager": "Mary Smith",
+              "Players": [
+                {
+                  "playerPosition": "Forward",
+                  "playerName": "Player one",
+                  "isCaptain": false
+                },
+                {
+                  "playerPosition": "Defense",
+                  "playerName": "Player two",
+                  "isCaptain": false
+                },
+                {
+                  "playerPosition": "Goalie",
+                  "playerName": "Player three",
+                  "isCaptain": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "freeAgents": [
+    {
+      "playerPosition": "defence",
+      "playerName": "A1",
+      "age": 20,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "goalie",
+      "playerName": "A2",
+      "age": 30,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "forward",
+      "playerName": "A3",
+      "age": 20,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "goalie",
+      "playerName": "A4",
+      "age": 20,
+      "skating": 60,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A5",
+      "age": 10,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "goalie",
+      "playerName": "A6",
+      "age": 20,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A7",
+      "age": 20,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A8",
+      "age": 20,
+      "skating": 70,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A9",
+      "age": 10,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A10",
+      "age": 20,
+      "skating": 10,
+      "shooting": 90,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A11",
+      "age": 20,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A12",
+      "age": 20,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 60,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A13",
+      "age": 20,
+      "skating": 30,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A14",
+      "age": 20,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A15",
+      "age": 20,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A16",
+      "age": 80,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A17",
+      "age": 20,
+      "skating": 10,
+      "shooting": 90,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A18",
+      "age": 20,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A19",
+      "age": 20,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A20",
+      "age": 40,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A21",
+      "age": 20,
+      "skating": 10,
+      "shooting": 50,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A22",
+      "age": 30,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A23",
+      "age": 20,
+      "skating": 10,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A24",
+      "age": 20,
+      "skating": 0,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    },
+    {
+      "playerPosition": "defence",
+      "playerName": "A25",
+      "age": 20,
+      "skating": 30,
+      "shooting": 30,
+      "checking": 10,
+      "saving": 20
+    },
+    {
+      "playerPosition": "goalie",
+      "playerName": "A26",
+      "age": 20,
+      "skating": 10,
+      "shooting": 40,
+      "checking": 10,
+      "saving": 80
+    }
+  ],
+  "coaches": [
+    {
+      "name": "A",
+      "skating": 0.5,
+      "shooting": 1.2,
+      "checking": 2.4,
+      "saving": 3.1
+    },
+    {
+      "name": "B",
+      "skating": 4.5,
+      "shooting": 8.2,
+      "checking": 1.3,
+      "saving": 1.4
+    }
+  ],
+  "generalManagers": [
+    "Siddhant",
+    "Vikram",
+    "Yash",
+    "Kethan"
+  ]
+}

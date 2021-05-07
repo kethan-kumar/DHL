@@ -1,0 +1,419 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "title": "Fictional league",
+  "description": "A fictional hockey league simulation",
+  "required": [
+    "leagueName",
+    "conferences",
+    "freeAgents",
+    "gameplayConfig"
+  ],
+  "properties": {
+    "leagueName": {
+      "id": "#/properties/leagueName",
+      "type": "string",
+      "title": "League Name",
+      "description": "Name of the league",
+      "minLength": 1
+    },
+    "gameplayConfig": {
+      "type": "object",
+      "required": [],
+      "properties": {
+        "aging": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "averageRetirementAge": {
+              "type": "number"
+            },
+            "maximumAge": {
+              "type": "number"
+            },
+            "statDecayChance": {
+              "type": "number"
+            }
+          }
+        },
+        "injuries": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "randomInjuryChance": {
+              "type": "number"
+            },
+            "injuryDaysLow": {
+              "type": "number"
+            },
+            "injuryDaysHigh": {
+              "type": "number"
+            }
+          }
+        },
+        "training": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "daysUntilStatIncreaseCheck": {
+              "type": "number"
+            }
+          }
+        },
+        "trading": {
+          "type": "object",
+          "required": [],
+          "properties": {
+            "lossPoint": {
+              "type": "number"
+            },
+            "randomTradeOfferChance": {
+              "type": "number"
+            },
+            "maxPlayersPerTrade": {
+              "type": "number"
+            },
+            "randomAcceptanceChance": {
+              "type": "number"
+            },
+            "gmTable": {
+              "type": "object",
+              "required": [],
+              "properties": {
+                "shrewd": {
+                  "type": "number"
+                },
+                "gambler": {
+                  "type": "number"
+                },
+                "normal": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "conferences": {
+      "id": "#/properties/conferences",
+      "type": "array",
+      "title": "Conferences",
+      "description": "List of conferences",
+      "items": {
+        "anyOf": [
+          {
+            "id": "#/properties/conferences/items/anyOf/0",
+            "properties": {
+              "conferenceName": {
+                "id": "#/properties/conferences/items/anyOf/0/properties/conferenceName",
+                "type": "string",
+                "title": "Conference Name",
+                "description": "Name of the conference",
+                "minLength": 1
+              },
+              "divisions": {
+                "id": "#/properties/conferences/items/anyOf/0/properties/divisions",
+                "type": "array",
+                "title": "Divisions",
+                "description": "List of divisions with teams",
+                "items": {
+                  "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items",
+                  "anyOf": [
+                    {
+                      "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0",
+                      "type": "object",
+                      "required": [
+                        "divisionName",
+                        "teams"
+                      ],
+                      "properties": {
+                        "divisionName": {
+                          "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/divisionName",
+                          "type": "string",
+                          "title": "Division Name",
+                          "description": "Name of the division",
+                          "minLength": 1
+                        },
+                        "teams": {
+                          "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams",
+                          "type": "array",
+                          "title": "Teams",
+                          "description": "List of teams",
+                          "items": {
+                            "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items",
+                            "anyOf": [
+                              {
+                                "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0",
+                                "type": "object",
+                                "required": [
+                                  "teamName",
+                                  "generalManager",
+                                  "headCoach",
+                                  "players"
+                                ],
+                                "properties": {
+                                  "teamName": {
+                                    "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/teamName",
+                                    "type": "string",
+                                    "title": "Team Name",
+                                    "description": "Name of the team",
+                                    "minLength": 1
+                                  },
+                                  "generalManager": {
+                                    "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/generalManager",
+                                    "type": "object",
+                                    "required": [],
+                                    "properties": {
+                                      "name": {
+                                        "type": "string"
+                                      },
+                                      "personality": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "headCoach": {
+                                    "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/headCoach",
+                                    "type": "object",
+                                    "title": "Head coach",
+                                    "description": "List of head coach",
+                                    "items": {
+                                      "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/headCoach/items",
+                                      "anyOf": [
+                                        {
+                                          "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/headCoach/items/anyOf/0",
+                                          "type": "object",
+                                          "required": [
+                                            "name",
+                                            "skating",
+                                            "shooting",
+                                            "checking",
+                                            "saving"
+                                          ],
+                                          "name": {
+                                            "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/playerName",
+                                            "type": "string",
+                                            "title": "Headcoach Name",
+                                            "description": "Name of the head coach",
+                                            "minLength": 1
+                                          },
+                                          "skating": {
+                                            "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/skating",
+                                            "type": "double",
+                                            "title": "skating",
+                                            "description": "skating value",
+                                            "minLength": 1
+                                          },
+                                          "shooting": {
+                                            "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/shooting",
+                                            "type": "double",
+                                            "title": "shooting",
+                                            "description": "shooting value",
+                                            "minLength": 1
+                                          },
+                                          "checking": {
+                                            "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/checking",
+                                            "type": "double",
+                                            "title": "checking",
+                                            "description": "checking value",
+                                            "minLength": 1
+                                          },
+                                          "saving": {
+                                            "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/saving",
+                                            "type": "double",
+                                            "title": "saving",
+                                            "description": "saving value",
+                                            "minLength": 1
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "players": {
+                                    "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players",
+                                    "type": "array",
+                                    "title": "Players",
+                                    "description": "List of players",
+                                    "items": {
+                                      "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items",
+                                      "anyOf": [
+                                        {
+                                          "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0",
+                                          "type": "object",
+                                          "required": [
+                                            "playerName",
+                                            "position",
+                                            "captain",
+                                            "skating",
+                                            "shooting",
+                                            "checking",
+                                            "saving"
+                                          ],
+                                          "properties": {
+                                            "playerName": {
+                                              "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/playerName",
+                                              "type": "string",
+                                              "title": "Player Name",
+                                              "description": "Name of the player",
+                                              "minLength": 1
+                                            },
+                                            "position": {
+                                              "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/position",
+                                              "type": "string",
+                                              "title": "Position",
+                                              "description": "Position of the player",
+                                              "enum": [
+                                                "forward",
+                                                "defense",
+                                                "goalie"
+                                              ]
+                                            },
+                                            "captain": {
+                                              "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/captain",
+                                              "type": "boolean",
+                                              "title": "Captain",
+                                              "description": "Captain status"
+                                            },
+                                            "skating": {
+                                              "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/skating",
+                                              "type": "integer",
+                                              "title": "skating",
+                                              "description": "skating value",
+                                              "minLength": 1
+                                            },
+                                            "shooting": {
+                                              "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/shooting",
+                                              "type": "integer",
+                                              "title": "shooting",
+                                              "description": "shooting value",
+                                              "minLength": 1
+                                            },
+                                            "checking": {
+                                              "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/checking",
+                                              "type": "integer",
+                                              "title": "checking",
+                                              "description": "checking value",
+                                              "minLength": 1
+                                            },
+                                            "saving": {
+                                              "id": "#/properties/conferences/items/anyOf/0/properties/divisions/items/anyOf/0/properties/teams/items/anyOf/0/properties/players/items/anyOf/0/properties/saving",
+                                              "type": "integer",
+                                              "title": "saving",
+                                              "description": "saving value",
+                                              "minLength": 1
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "required": [
+              "conferenceName",
+              "divisions"
+            ],
+            "type": "object"
+          }
+        ],
+        "id": "#/properties/conferences/items"
+      }
+    },
+    "freeAgents": {
+      "id": "#/properties/freeAgents",
+      "type": "array",
+      "title": "FreeAgents",
+      "description": "Extra players",
+      "items": {
+        "id": "#/properties/freeAgents/items",
+        "anyOf": [
+          {
+            "id": "#/properties/freeAgents/items/anyOf/0",
+            "type": "object",
+            "required": [
+              "playerName",
+              "position",
+              "skating",
+              "shooting",
+              "checking",
+              "saving"
+            ],
+            "properties": {
+              "playerName": {
+                "id": "#/properties/freeAgents/items/anyOf/0/properties/playerName",
+                "type": "string",
+                "title": "Player Name",
+                "description": "Name of the player",
+                "minLength": 1
+              },
+              "position": {
+                "id": "#/properties/freeAgents/items/anyOf/0/properties/position",
+                "type": "string",
+                "title": "Position",
+                "description": "Position of the player",
+                "enum": [
+                  "forward",
+                  "defense",
+                  "goalie"
+                ]
+              },
+              "skating": {
+                "id": "#/properties/freeAgents/items/anyOf/0/properties/captain",
+                "type": "integer",
+                "title": "skating",
+                "description": "skating value",
+                "minLength": 1
+              },
+              "shooting": {
+                "id": "#/properties/freeAgents/items/anyOf/0/properties/captain",
+                "type": "integer",
+                "title": "shooting",
+                "description": "shooting value",
+                "minLength": 1
+              },
+              "checking": {
+                "id": "#/properties/freeAgents/items/anyOf/0/properties/captain",
+                "type": "integer",
+                "title": "checking",
+                "description": "checking value",
+                "minLength": 1
+              },
+              "saving": {
+                "id": "#/properties/freeAgents/items/anyOf/0/properties/captain",
+                "type": "integer",
+                "title": "saving",
+                "description": "saving value",
+                "minLength": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    "generalManagers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "personality": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

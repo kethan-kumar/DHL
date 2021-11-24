@@ -1,4 +1,4 @@
-/* @Author:  Siddhant Ashutosh */
+/* @Author: Kethan Kumar */
 package org.leaguemodel;
 
 import org.apache.log4j.Logger;

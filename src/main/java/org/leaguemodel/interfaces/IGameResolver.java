@@ -1,4 +1,4 @@
-/* @Author:  Siddhant Ashutosh */
+/* @Author: Kethan Kumar */
 package org.leaguemodel.interfaces;
 
 public interface IGameResolver {

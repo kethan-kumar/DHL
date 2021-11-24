@@ -5,5 +5,5 @@ The code follows all standards and principles like SOLID principles, Design Patt
 
 ## The project is developed by a group at Dalhousie University. As part of the project, below are my contribuitions.
 
-* Major contribuitions: League model, State machine and Trophy System.
+* Major contribuitions: State machine, Trophy System and League model.
 * Author names have been included for all the contribuitions.
